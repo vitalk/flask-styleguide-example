@@ -9,4 +9,4 @@
     :copyright: (c) 2015 by Vital Kudzelka <vital.kudzelka@gmail.com>
     :license: MIT
 """
-__version__ = '0.1.0'
+__version__ = '0.1.1'

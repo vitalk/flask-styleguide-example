@@ -9,6 +9,8 @@
     :copyright: (c) 2015 by Vital Kudzelka <vital.kudzelka@gmail.com>
     :license: MIT
 """
+import io
+import os
 from datetime import datetime
 
 from flask import json
@@ -18,13 +20,13 @@ from flask.ext.assets import (
 )
 
 
-def load_json(filename):
-    with open(filename) as f:
+def read_json(*parts):
+    with io.open(os.path.join(*parts)) as f:
         return json.load(f)
 
 
 # Load package metadata.
-package = load_json('package.json')
+package = read_json(os.path.dirname(__file__), os.pardir, 'package.json')
 
 # Create copyright placeholder at init time.
 banner = ('/*! {name} {version} | (c) {year} {author} | http://opensource.org/licenses/{license}\n'
