@@ -14,7 +14,7 @@ import os
 from datetime import datetime
 
 from flask import json
-from flask.ext.assets import (
+from flask_assets import (
     Bundle,
     Environment,
 )

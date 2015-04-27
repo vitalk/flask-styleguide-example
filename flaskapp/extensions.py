@@ -10,5 +10,5 @@
     :copyright: (c) 2015 by Vital Kudzelka <vital.kudzelka@gmail.com>
     :license: MIT
 """
-from flask.ext.styleguide import Styleguide
+from flask_styleguide import Styleguide
 styleguide = Styleguide()
