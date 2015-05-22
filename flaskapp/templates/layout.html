@@ -19,17 +19,23 @@
     {% block cssextra %}{% endblock %}
   </head>
   <body class="{% block bodyclass %}{% endblock %}">
-    <header role="banner">
-      <nav role="navigation">
-        {% block navigation %}{% endblock %}
-      </nav>
+    <header class="page-masthead" role="banner">
+      <div class="wrapper">
+        <nav role="navigation">
+          {% block navigation %}
+          <ul class="nav">
+            <li><a href="https://github.com/vitalk/flaskapp">View code on <strong>GitHub</strong></a></li>
+          </ul>
+          {% endblock %}
+        </nav>
+      </div>
     </header>
 
     <div role="main">
       {% block main %}Content goes here...{% endblock %}
     </div>
 
-    <footer role="contentinfo">
+    <footer class="page-footer" role="contentinfo">
       {% block contentinfo %}
         <p class="copyrights">Made by <a href="https://github.com/vitalk">Vital Kudzelka</a>
           and hosted on <a href="https://github.com/vitalk/flaskapp">GitHub</a>.</p>

@@ -1,0 +1,17 @@
+// Double-stranded heading hierarchy.
+
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+    #font#family.sans-serif();
+    font-weight: normal;
+    text-rendering: optimizelegibility;
+
+    // Add margin after heading to ensure consistent spacing and
+    // vertical rhythm.
+    margin-bottom: @unit/2;
+}
+h1, .h1 { font-size: @classy-h1-size; }
+h2, .h2 { font-size: @classy-h2-size; }
+h3, .h3 { font-size: @classy-h3-size; }
+h4, .h4 { font-size: @classy-h4-size; }

@@ -1,0 +1,16 @@
+// Base typography and lists.
+
+
+p,
+ul, ol {
+    // Single-direction margins below paragraphs and lists. Clear that margin
+    // for the last item.
+    margin-bottom: @unit;
+    &:last-child { margin-bottom: 0; }
+}
+
+
+ul, ol {
+    // Ensure the list markers are properly aligned with other text objects.
+    margin-left: @unit;
+}
