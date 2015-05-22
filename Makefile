@@ -1,3 +1,5 @@
+CURRENT = $(shell git rev-parse --short HEAD)
+
 all: help
 
 clean:
@@ -12,6 +14,7 @@ help:
 	@echo " test 		to run the test suite"
 	@echo " watch		to enable livereload on assets changes"
 	@echo " freeze		to freeze applicaion"
+	@echo " gh-pages	to update gh-pages"
 
 install:
 	@pip install -r requirements/main.txt
@@ -28,4 +31,13 @@ test:
 watch:
 	@grunt watch
 
-.PHONY: clean help install serv test watch freeze
+gh-pages:
+	git checkout -b gh-pages-$(CURRENT)
+	FREEZER_BASE_URL='/flaskapp' python setup.py freeze
+	git add -f gh-pages
+	git commit --allow-empty -e -m "Update gh-pages at $(CURRENT)"
+	git push origin `git subtree split --prefix gh-pages`:gh-pages --force
+	git checkout -
+	git branch -D gh-pages-$(CURRENT)
+
+.PHONY: clean help install serv test watch freeze gh-pages
