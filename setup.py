@@ -52,6 +52,7 @@ setup(
     tests_require=tests_require,
     test_suite='tests',
     cmdclass={
+        'freeze': cli.freezer.freeze,
         'serve': cli.serve.run,
         'test': cli.test.pytest,
     },

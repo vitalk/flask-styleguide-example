@@ -36,6 +36,7 @@ class command(Command):
 
 # Fix possible circular imports.
 from . import (
+    freezer,
     serve,
     test,
 )

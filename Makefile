@@ -11,6 +11,7 @@ help:
 	@echo " serv		to run dev server"
 	@echo " test 		to run the test suite"
 	@echo " watch		to enable livereload on assets changes"
+	@echo " freeze		to freeze applicaion"
 
 install:
 	@pip install -r requirements/main.txt
@@ -18,10 +19,13 @@ install:
 serv:
 	@python setup.py serve -d -r -p 5008
 
+freeze:
+	@python setup.py freeze
+
 test:
 	@python setup.py test -q
 
 watch:
 	@grunt watch
 
-.PHONY: clean help install serv test watch
+.PHONY: clean help install serv test watch freeze
