@@ -11,4 +11,4 @@
     :license: MIT
 """
 from flask_styleguide import Styleguide
-styleguide = Styleguide()
+style_guide = Styleguide()
