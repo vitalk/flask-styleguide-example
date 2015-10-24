@@ -12,14 +12,13 @@
     "classy-border-box": "~0.1.0",
     "classy-clearfix": "~0.1.1",
     "classy-defaults": "~0.2.2",
-    "classy-images": "~0.1.0",
     "classy-lists": "~0.1.1",
     "classy-media-queries": "~0.1.0",
-    "classy-nav": "~0.1.1",
+    "classy-nav": "~0.2.0",
     "classy-page": "~0.1.0",
     "classy-snippets": "~0.1.0",
     "classy-sticky-footer": "~0.1.0",
-    "classy-style-guide": "~0.0.1",
+    "classy-style-guide": "~0.0.5",
     "classy-typography": "~0.1.4",
     "lesshat": "~3.0.2"
   }
