@@ -7,5 +7,20 @@
        <a href="https://github.com/vitalk/flask-styleguide">Flask-Styleguide</a>
        and <a href="http://pythonhosted.org/Frozen-Flask/">Frozen-Flask</a>.</p>
   </header>
+
+  {% styleguide "2.1" %}
+    <button class="button$modifier_class">Button</button>
+    <a class="button$modifier_class">A button link</a>
+  {% endstyleguide %}
+
+  {% styleguide "2.2" %}
+    <button class="button$modifier_class">Button</button>
+    <a class="button$modifier_class">A button link</a>
+  {% endstyleguide %}
+
+  {% styleguide "2.3" %}
+    <button class="button$modifier_class">A full-width button</button>
+  {% endstyleguide %}
+
 </div>
 {% endblock %}

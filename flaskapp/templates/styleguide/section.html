@@ -1,0 +1,29 @@
+<article class="style-guide" id="{{ section.section }}">
+  <h4 class="style-guide-reference">{{ section.section }}</h4>
+
+  <div class="style-guide-description">
+    <p>{{ section.description|safe }}</p>
+    {% if section.modifiers %}
+      <ul class="style-guide-modifiers">
+        {% for m in section.modifiers %}
+          <li><strong>{{ m.name }}</strong> - {{ m.description }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+
+  <div class="style-guide-element">
+    {{ section.example|safe }}
+  </div>
+
+  {% for m in section.modifiers %}
+    <div class="style-guide-element">
+      <small class="style-guide-modifier">{{ m.name }}</small>
+      {{ m.example|safe }}
+    </div>
+  {% endfor %}
+
+  <div class="style-guide-html">
+    <pre>{{ section.example|forceescape }}</pre>
+  </div>
+</article>
