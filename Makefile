@@ -35,7 +35,7 @@ gh-pages:
 	git checkout -b gh-pages-$(CURRENT)
 	FREEZER_BASE_URL='/flaskapp' python setup.py freeze
 	git add -f gh-pages
-	git commit --allow-empty -e -m "Update gh-pages at $(CURRENT)"
+	git commit --allow-empty -m "Update gh-pages at $(CURRENT)"
 	git push origin `git subtree split --prefix gh-pages`:gh-pages --force
 	git checkout -
 	git branch -D gh-pages-$(CURRENT)
