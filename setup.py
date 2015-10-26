@@ -34,13 +34,13 @@ requirements = read('requirements', 'main.txt').splitlines()
 tests_require = read('requirements', 'test.txt').splitlines()
 
 setup(
-    name='flaskapp',
+    name='flask-styleguide-example',
     version=__version__,
 
     author='Vital Kudzelka',
     author_email='vital.kudzelka@gmail.com',
 
-    url='https://github.com/vitalk/flaskapp',
+    url='https://github.com/vitalk/flask-styleguide-example',
     description='Example of Live Style Guide made with Flask-Styleguide.',
     long_description=read('README.md'),
     license='MIT',
