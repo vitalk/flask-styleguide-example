@@ -8,6 +8,7 @@ __pytest__
 build
 dist
 venv
+gh-pages
 
 # Compiled and minified assets
 *.css

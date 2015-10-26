@@ -13,3 +13,5 @@ jsmin==2.1.0
 
 # Live Style Guide.
 Flask-Styleguide
+
+Frozen-Flask==0.11

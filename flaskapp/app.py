@@ -13,7 +13,8 @@ from flask import Flask
 
 from flaskapp.assets import assets
 from flaskapp.extensions import (
-    styleguide
+    freezer,
+    style_guide
 )
 
 
@@ -38,7 +39,8 @@ def configure_application(app, config, options):
 def configure_extensions(app):
     """Register extensions to application."""
     assets.init_app(app)
-    styleguide.init_app(app)
+    freezer.init_app(app)
+    style_guide.init_app(app)
     return None
 
 
