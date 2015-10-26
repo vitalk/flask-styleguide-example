@@ -1,6 +1,6 @@
 {
   "name": "flaskapp",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "author": "Vital Kudzelka <vital.kudzelka@gmail.com>",
   "description": "Example of Live Style Guide made with Flask-Styleguide.",
   "license": "MIT",
