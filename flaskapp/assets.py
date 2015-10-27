@@ -49,6 +49,7 @@ cssmain = Bundle(
 
 scripts = Bundle(
     'scripts/main.js',
+    'scripts/kss.js',
     filters=('jsmin', copyright),
     output='dist/main.%(version)s.js'
 )
