@@ -18,7 +18,7 @@ from flaskapp.extensions import (
 )
 
 
-def create_app(config='dev.ini', **options):
+def create_app(config='dev.cfg', **options):
     app = Flask(__name__)
 
     configure_application(app, config, options)
