@@ -4,7 +4,7 @@
     app.app
     ~~~~~~~
 
-    Example of Live Style Guide made with Flask-Styleguide.
+    Example of living Styleguide made with Flask-Styleguide.
 
     :copyright: (c) 2015 by Vital Kudzelka <vital.kudzelka@gmail.com>
     :license: MIT
