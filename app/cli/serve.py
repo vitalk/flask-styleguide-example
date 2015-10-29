@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-    flaskapp.cli.serve
-    ~~~~~~~~~~~~~~~~~~
+    app.cli.serve
+    ~~~~~~~~~~~~~
 
     Serve application.
 

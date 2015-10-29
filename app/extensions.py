@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-    flaskapp.extensions
-    ~~~~~~~~~~~~~~~~~~~
+    app.extensions
+    ~~~~~~~~~~~~~~
 
     Extensions module. Each extension is initialized in the app factory
     located in app.py.

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-    flaskapp.compat
-    ~~~~~~~~~~~~~~~
+    app.compat
+    ~~~~~~~~~~
 
     Python 2/3 compatibility module.
 

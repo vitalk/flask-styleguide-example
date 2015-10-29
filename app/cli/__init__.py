@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-    flaskapp.cli
-    ~~~~~~~~~~~~
+    app.cli
+    ~~~~~~~
 
     Command line interface for application.
 

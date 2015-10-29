@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-    flaskapp
-    ~~~~~~~~
+    app
+    ~~~
 
     Example of Live Style Guide made with Flask-Styleguide.
 
@@ -17,7 +17,7 @@ from setuptools import (
     setup,
 )
 
-from flaskapp import (
+from app import (
     __version__,
     cli,
 )

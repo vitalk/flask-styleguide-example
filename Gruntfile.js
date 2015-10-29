@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     // Path to static assets
-    assets: 'flaskapp/static',
+    assets: 'app/static',
 
     clean: {
       stylesheets: ['<%= assets %>/dist']

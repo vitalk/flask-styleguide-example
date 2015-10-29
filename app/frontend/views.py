@@ -1,6 +1,6 @@
 """
-    flaskapp.frontend.views
-    ~~~~~~~~~~~~~~~~~~~~~~~
+    app.frontend.views
+    ~~~~~~~~~~~~~~~~~~
 
     The application frontpage.
 

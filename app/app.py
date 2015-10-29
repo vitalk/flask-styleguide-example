@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-    flaskapp.app
-    ~~~~~~~~~~~~
+    app.app
+    ~~~~~~~
 
     Example of Live Style Guide made with Flask-Styleguide.
 
@@ -11,8 +11,8 @@
 """
 from flask import Flask
 
-from flaskapp.assets import assets
-from flaskapp.extensions import (
+from .assets import assets
+from .extensions import (
     freezer,
     style_guide
 )
@@ -46,7 +46,7 @@ def configure_extensions(app):
 
 def configure_blueprints(app):
     """Configure application blueprints."""
-    from flaskapp.frontend import frontend
+    from .frontend import frontend
     app.register_blueprint(frontend)
 
     return None
