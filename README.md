@@ -4,11 +4,11 @@ Example of living Styleguide made with [Flask-Styleguide](https://github.com/vit
 and [Frozen-Flask](https://github.com/SimonSapin/Frozen-Flask/). This guide
 describes how to generate your own styleguide for any flask application.
 
-- Use [KSS](http://warpspire.com/kss/). KSS is documentation syntax for any
-  flavor CSS. It's human readable, machine parsable, and easy to remember.
-  [Flask-Styleguide](https://github.com/vitalk/flask-styleguide) looks for any
-  KSS formated documentation in static directories of your application and
-  registered blueprints (if any). 
+- Use [KSS](http://warpspire.com/kss/) to document your stylesheets. KSS is
+  documentation syntax for any flavor CSS. It's human readable, machine
+  parsable, and easy to remember. [Flask-Styleguide](https://github.com/vitalk/flask-styleguide)
+  looks for any KSS formated documentation in static directories of your
+  application and registered blueprints (if any). 
 
   ```less
   // A standard, but classy, button used widely for submit forms and
@@ -79,9 +79,8 @@ describes how to generate your own styleguide for any flask application.
   </article>
   ```
 
-- Prettify styleguide. Without styles styleguide looks awfully. Apply some
-  styling to it and we are done. For example, I use `bower` to install
-  `classy-style-guide` package and then import it into main stylesheet:
+- Prettify styleguide. Without styles styleguide looks not so great. Apply
+  some styling to it or reuse this one:
 
   ```bash
   bower install --save classy-style-guide
@@ -91,5 +90,5 @@ describes how to generate your own styleguide for any flask application.
   @import 'classy-style-guide/components.style-guide.less';
   ```
 
-- Now that you’re up and running. Fire up a browser and go to your
-  styleguide...
+- Now that you’re up and running. Fire up a browser and go to the
+  [brand new styleguide...](https://vitalk.github.io/flask-styleguide-example)
