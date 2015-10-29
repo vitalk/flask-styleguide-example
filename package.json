@@ -1,10 +1,10 @@
 {
-  "name": "flaskapp",
-  "version": "0.2.0",
+  "name": "flask-styleguide-example",
+  "version": "0.3.0",
   "author": "Vital Kudzelka <vital.kudzelka@gmail.com>",
   "description": "Example of Live Style Guide made with Flask-Styleguide.",
   "license": "MIT",
-  "homepage": "https://github.com/vitalk/flaskapp",
+  "homepage": "https://github.com/vitalk/flask-styleguide-example",
   "private": true,
   "devDependencies": {
     "bower": "^1.4.1",

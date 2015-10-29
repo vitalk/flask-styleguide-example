@@ -1,30 +1,94 @@
-# Live Style Guide
+# Living Styleguide
 
-Example of Live Style Guide made with [Flask-Styleguide](https://github.com/vitalk/flask-styleguide).
+Example of living Styleguide made with [Flask-Styleguide](https://github.com/vitalk/flask-styleguide)
+and [Frozen-Flask](https://github.com/SimonSapin/Frozen-Flask/). This guide
+describes how to generate your own styleguide for any flask application.
 
-## Quickstart
+- Use [KSS](http://warpspire.com/kss/) to document your stylesheets. KSS is
+  documentation syntax for any flavor CSS. It's human readable, machine
+  parsable, and easy to remember. [Flask-Styleguide](https://github.com/vitalk/flask-styleguide)
+  looks for any KSS formated documentation in static directories of your
+  application and registered blueprints (if any). 
 
-1. Install application dependencies into virtual environment:
+  ```less
+  // A standard, but classy, button used widely for submit forms and
+  // to complete other app actions.
+  //
+  // :hover - Hover state.
+  // :active - When the button is pressed.
+  // :focus - When the button is focused.
+  // :disabled - Disabled state.
+  // .is-disabled - Same as above.
+  //
+  // Styleguide 2.1.
+  ```
 
-   ```sh
-   make install
-   ```
+- Define endpoint for your styleguide in application:
 
-2. Set necessary environment variables:
+  ```python
+  @app.route('/styleguide/')
+  def styleguide():
+      return render_template('styleguide.html')
+  ```
 
-   ```sh
-   export SECRET_KEY='my-secret-key'
-   ```
+- The new jinja tag `styleguide` becomes available when `flask_styleguide` is
+  initialized. Let's write some html examples for our buttons:
 
-3. Install frontend dependencies via `npm` and `bower`:
+  ```jinja
+  {% extends 'layout.html' %}
+  {% block main %}
+    {% styleguide "2.1" %}
+      <button class="button$modifier_class">Button</button>
+      <a class="button$modifier_class">A button link</a>
+    {% endstyleguide %}
+  {% endblock %}
+  ```
 
-   ```sh
-   npm install
-   bower install
-   ```
+- The `styleguide/section.html` template will be used for each section in your
+  styleguide (like `2.1` in the previous step). Let's define it:
 
-4. Run local development server:
+  ```jinja
+  <article class="style-guide" id="{{ section.section }}">
+    <h4 class="style-guide-reference">{{ section.section }}</h4>
 
-   ```sh
-   make serve
-   ```
+    <div class="style-guide-description">
+      <p>{{ section.description|safe }}</p>
+      {% if section.modifiers %}
+        <ul class="style-guide-modifiers">
+          {% for m in section.modifiers %}
+            <li><strong>{{ m.name }}</strong> - {{ m.description }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+
+    <div class="style-guide-element">
+      {{ section.example|safe }}
+    </div>
+
+    {% for m in section.modifiers %}
+      <div class="style-guide-element">
+        <small class="style-guide-modifier">{{ m.name }}</small>
+        {{ m.example|safe }}
+      </div>
+    {% endfor %}
+
+    <div class="style-guide-html">
+      <pre>{{ section.example|forceescape }}</pre>
+    </div>
+  </article>
+  ```
+
+- Prettify styleguide. Without styles styleguide looks not so great. Apply
+  some styling to it or reuse this one:
+
+  ```bash
+  bower install --save classy-style-guide
+  ```
+
+  ```less
+  @import 'classy-style-guide/components.style-guide.less';
+  ```
+
+- Now that you’re up and running. Fire up a browser and go to the
+  [brand new styleguide...](https://vitalk.github.io/flask-styleguide-example)

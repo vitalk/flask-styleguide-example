@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import pytest
 
-from flaskapp.app import create_app
+from app.app import create_app
 
 
 @pytest.fixture(scope='session')
