@@ -6,6 +6,10 @@ python:
   - 3.3
   - 3.4
 
+before_script:
+  - npm install -g postcss-cli autoprefixer less bower
+  - bower install
+
 install:
   - pip install -q -r requirements/main.txt
   - pip install -q -r requirements/test.txt
