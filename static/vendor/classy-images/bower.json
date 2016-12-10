@@ -1,0 +1,14 @@
+{
+  "name": "classy-images",
+  "version": "0.1.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "A base styling for images",
+  "main": "base.images.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT"
+}

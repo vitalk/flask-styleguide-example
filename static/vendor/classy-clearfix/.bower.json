@@ -1,0 +1,24 @@
+{
+  "name": "classy-clearfix",
+  "version": "0.1.1",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "Micro clearfix hack",
+  "main": "generic.clearfix.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/vitalk/classy-clearfix",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.1",
+    "commit": "3ca38b9e32f0b1dec84e8cef8d8c6e05edb5b1d7"
+  },
+  "_source": "git://github.com/vitalk/classy-clearfix.git",
+  "_target": "~0.1.1",
+  "_originalSource": "classy-clearfix"
+}

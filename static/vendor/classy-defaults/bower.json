@@ -1,0 +1,14 @@
+{
+  "name": "classy-defaults",
+  "version": "0.2.2",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "A few essential constraints for proper classy framework functionality",
+  "main": "defaults.vars.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT"
+}

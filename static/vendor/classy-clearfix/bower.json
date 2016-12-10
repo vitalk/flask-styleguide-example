@@ -1,0 +1,14 @@
+{
+  "name": "classy-clearfix",
+  "version": "0.1.1",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "Micro clearfix hack",
+  "main": "generic.clearfix.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT"
+}

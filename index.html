@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Living Styleguide</title>
+
+    
+    <meta name="author" content="Vital Kudzelka">
+    <meta name="description" content="Example of living Styleguide made with Flask-Styleguide and Frozen-Flask">
+    <meta property="og:url" content="https://vitalk.github.io/flask-styleguide-example/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Example of living Styleguide">
+    <meta property="og:description" content="Example of living Styleguide made with Flask-Styleguide and Frozen-Flask">
+    
+
+    
+    
+      <link href="/flask-styleguide-example/static/dist/main.54df5899.css" rel="stylesheet">
+    
+    
+
+    
+  </head>
+  <body class="">
+    <header class="page-masthead" role="banner">
+      <div class="wrapper">
+        <nav role="navigation">
+          
+          <ul class="page-masthead__nav nav">
+            <li class="nav__item">
+              <a class="nav__link" href="https://github.com/vitalk/flask-styleguide-example">
+                View code on <strong>GitHub</strong>
+              </a>
+            </li>
+          </ul>
+          
+        </nav>
+      </div>
+    </header>
+
+    <div role="main">
+      
+<div class="wrapper">
+  <header class="welcome-banner">
+    <h1>Welcome to a living Styleguide</h1>
+    <p class="lead">This page is an example of a living Styleguide made with
+       <a href="https://github.com/vitalk/flask-styleguide">Flask-Styleguide</a>
+       and <a href="http://pythonhosted.org/Frozen-Flask/">Frozen-Flask</a>.</p>
+  </header>
+
+  <article class="style-guide" id="2.1">
+  <h4 class="style-guide__reference">2.1</h4>
+
+  <div class="style-guide__description">
+    <p>A standard, but classy, button used widely for submit forms and
+to complete other app actions.</p>
+    
+      <ul class="style-guide__modifiers">
+        
+          <li><strong>:hover</strong> - Hover state.</li>
+        
+          <li><strong>:active</strong> - When the button is pressed.</li>
+        
+          <li><strong>:focus</strong> - When the button is focused.</li>
+        
+          <li><strong>:disabled</strong> - Disabled state.</li>
+        
+          <li><strong>.is-disabled</strong> - Same as above.</li>
+        
+      </ul>
+    
+  </div>
+
+  <div class="style-guide__element">
+    
+<button class="button">Button</button>
+<a class="button">A button link</a>
+
+  </div>
+
+  
+    <div class="style-guide__element">
+      <small class="style-guide__modifier">:hover</small>
+      
+<button class="button pseudo-class-hover">Button</button>
+<a class="button pseudo-class-hover">A button link</a>
+
+    </div>
+  
+    <div class="style-guide__element">
+      <small class="style-guide__modifier">:active</small>
+      
+<button class="button pseudo-class-active">Button</button>
+<a class="button pseudo-class-active">A button link</a>
+
+    </div>
+  
+    <div class="style-guide__element">
+      <small class="style-guide__modifier">:focus</small>
+      
+<button class="button pseudo-class-focus">Button</button>
+<a class="button pseudo-class-focus">A button link</a>
+
+    </div>
+  
+    <div class="style-guide__element">
+      <small class="style-guide__modifier">:disabled</small>
+      
+<button class="button pseudo-class-disabled">Button</button>
+<a class="button pseudo-class-disabled">A button link</a>
+
+    </div>
+  
+    <div class="style-guide__element">
+      <small class="style-guide__modifier">.is-disabled</small>
+      
+<button class="button is-disabled">Button</button>
+<a class="button is-disabled">A button link</a>
+
+    </div>
+  
+
+  <div class="style-guide__html">
+    <pre>
+&lt;button class=&#34;button&#34;&gt;Button&lt;/button&gt;
+&lt;a class=&#34;button&#34;&gt;A button link&lt;/a&gt;
+</pre>
+  </div>
+</article>
+
+  <article class="style-guide" id="2.2">
+  <h4 class="style-guide__reference">2.2</h4>
+
+  <div class="style-guide__description">
+    <p>Proportionally increase or decrease button size.</p>
+    
+      <ul class="style-guide__modifiers">
+        
+          <li><strong>.button--mini</strong> - A mini button.</li>
+        
+          <li><strong>.button--xl</strong> - An extra large button.</li>
+        
+      </ul>
+    
+  </div>
+
+  <div class="style-guide__element">
+    
+<button class="button">Button</button>
+<a class="button">A button link</a>
+
+  </div>
+
+  
+    <div class="style-guide__element">
+      <small class="style-guide__modifier">.button--mini</small>
+      
+<button class="button button--mini">Button</button>
+<a class="button button--mini">A button link</a>
+
+    </div>
+  
+    <div class="style-guide__element">
+      <small class="style-guide__modifier">.button--xl</small>
+      
+<button class="button button--xl">Button</button>
+<a class="button button--xl">A button link</a>
+
+    </div>
+  
+
+  <div class="style-guide__html">
+    <pre>
+&lt;button class=&#34;button&#34;&gt;Button&lt;/button&gt;
+&lt;a class=&#34;button&#34;&gt;A button link&lt;/a&gt;
+</pre>
+  </div>
+</article>
+
+  <article class="style-guide" id="2.3">
+  <h4 class="style-guide__reference">2.3</h4>
+
+  <div class="style-guide__description">
+    <p>Full-width button.</p>
+    
+      <ul class="style-guide__modifiers">
+        
+          <li><strong>.button--block</strong> - Button which takes up the entire width of its container.</li>
+        
+      </ul>
+    
+  </div>
+
+  <div class="style-guide__element">
+    
+<button class="button">A full-width button</button>
+
+  </div>
+
+  
+    <div class="style-guide__element">
+      <small class="style-guide__modifier">.button--block</small>
+      
+<button class="button button--block">A full-width button</button>
+
+    </div>
+  
+
+  <div class="style-guide__html">
+    <pre>
+&lt;button class=&#34;button&#34;&gt;A full-width button&lt;/button&gt;
+</pre>
+  </div>
+</article>
+
+</div>
+
+    </div>
+
+    <footer class="page-footer" role="contentinfo">
+      
+        <p class="copyrights">Made by <a href="https://github.com/vitalk">Vital Kudzelka</a>
+          and hosted on <a href="https://github.com/vitalk/flask-styleguide-example">GitHub</a>.</p>
+      
+    </footer>
+
+    
+
+    
+
+    
+      <script src="/flask-styleguide-example/static/dist/main.aafbdb36.js"></script>
+    
+    
+  </body>
+</html>

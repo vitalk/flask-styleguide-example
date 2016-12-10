@@ -1,0 +1,14 @@
+{
+  "name": "classy-media-queries",
+  "version": "0.1.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "A few variables to simplify usage of media queries",
+  "main": "defaults.media-queries.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT"
+}

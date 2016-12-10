@@ -1,0 +1,27 @@
+{
+  "name": "classy-snippets",
+  "version": "0.1.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "Essential classy snippets",
+  "main": "generic.snippets.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "classy-defaults": "~0.2.2"
+  },
+  "homepage": "https://github.com/vitalk/classy-snippets",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "5551bdd94a8ea2816eb60e3e9417b7e92265635a"
+  },
+  "_source": "git://github.com/vitalk/classy-snippets.git",
+  "_target": "~0.1.0",
+  "_originalSource": "classy-snippets"
+}

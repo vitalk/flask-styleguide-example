@@ -1,0 +1,38 @@
+// Font snippets to set `font-size`, `font-family` and `font-weight`.
+#font {
+    #family {
+        .serif(@family: @classy-serif-font-family) {
+            font-family: @family;
+        }
+        .sans-serif(@family: @classy-sans-serif-font-family) {
+            font-family: @family;
+        }
+        .monospace(@family: @classy-monospace-font-family) {
+            font-family: @family;
+        }
+    }
+    .shorthand(@size: @classy-base-font-size, @weight: normal) {
+        #font.size(@size);
+        font-weight: @weight;
+    }
+    .serif(@size: @classy-base-font-size, @weight: normal) {
+        #font#family.serif;
+        #font.shorthand(@size, @weight);
+    }
+    .sans-serif(@size: @classy-base-font-size, @weight: normal) {
+        #font#family.sans-serif;
+        #font.shorthand(@size, @weight);
+    }
+    .monospace(@size: @classy-base-font-size, @weight: normal) {
+        #font#family.monospace;
+        #font.shorthand(@size, @weight);
+    }
+
+    // 1. Set fallback in pixels
+    // 2. Do not touch ems
+    .size(@size) when (ispixel(@size)) {
+        font-size: @size; // 1
+        font-size: unit(@size)/16*1rem;
+    }
+    .size(@size) when (isem(@size)) { font-size: @size; } // 2
+}

@@ -1,0 +1,14 @@
+{
+  "name": "classy-border-box",
+  "version": "0.1.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "Apply a natural box layout model globally",
+  "main": "generic.border-box.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT"
+}

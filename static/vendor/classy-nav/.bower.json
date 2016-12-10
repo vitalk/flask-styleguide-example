@@ -1,0 +1,28 @@
+{
+  "name": "classy-nav",
+  "version": "0.4.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "Classy navigation",
+  "main": "objects.nav.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "classy-clearfix": "~0.1.0",
+    "classy-defaults": "~0.2.0"
+  },
+  "homepage": "https://github.com/vitalk/classy-nav",
+  "_release": "0.4.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.4.0",
+    "commit": "f853878c5503fc4bc37e31a851cc9f42e1b91736"
+  },
+  "_source": "https://github.com/vitalk/classy-nav.git",
+  "_target": "~0.4.0",
+  "_originalSource": "classy-nav"
+}

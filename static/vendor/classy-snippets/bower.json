@@ -1,0 +1,17 @@
+{
+  "name": "classy-snippets",
+  "version": "0.1.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "Essential classy snippets",
+  "main": "generic.snippets.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "classy-defaults": "~0.2.2"
+  }
+}

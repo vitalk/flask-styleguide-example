@@ -1,0 +1,17 @@
+{
+  "name": "classy-code",
+  "version": "0.1.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "A basic styling for code snippets and formatted text",
+  "main": "base.code.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "classy-snippets": "~0.1.0"
+  }
+}

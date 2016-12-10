@@ -1,0 +1,25 @@
+// Page header.
+
+
+.page-masthead {
+    #classy-style-guide-vars;
+
+    // Add more space for breeze. Ensure the gap between the following
+    // content exists.
+    padding-top: @unit;
+    padding-bottom: @unit;
+    margin-bottom: 2* @unit;
+
+    // Ensure the empty box doesn't collapses when navigation is floated.
+    .clearfix();
+
+    // Use the same colour palette as the style guide itself.
+    background: @b;
+    border-bottom: 1px solid @bo;
+
+
+    // Pull navigation to the right.
+    &__nav {
+        float: right;
+    }
+}

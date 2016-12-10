@@ -1,0 +1,27 @@
+{
+  "name": "classy-lists",
+  "version": "0.2.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "Ordered and unordered lists",
+  "main": "elements.lists.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "classy-defaults": "~0.2.2"
+  },
+  "homepage": "https://github.com/vitalk/classy-lists",
+  "_release": "0.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.0",
+    "commit": "8671d26dd53164a51b67a1d150b707f256d3a48f"
+  },
+  "_source": "https://github.com/vitalk/classy-lists.git",
+  "_target": "~0.2.0",
+  "_originalSource": "classy-lists"
+}

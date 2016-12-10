@@ -1,0 +1,33 @@
+// Sticky footer, as per: http://css-tricks.com/snippets/css/sticky-footer/
+
+
+@classy-sticky-footer-namespace: ~"@{classy-namespace}sticky-footer";;
+
+
+// 1. Use after pseudo element to reserve space for footer itself.
+// 2. Explicitly set footer height.
+// 3. Ensure the html root and wrapper fill the entire viewport.
+.classy-sticky-footer(@height) {
+
+    .has-@{classy-sticky-footer-namespace} {
+        margin-bottom: -@height; // 1
+        min-height: 100%; // 3
+
+
+        &:after { // 1
+            content: "";
+            display: block;
+            height: @height;
+        }
+    }
+
+
+    .@{classy-sticky-footer-namespace} {
+        height: @height; // 2
+    }
+
+
+    html, body {
+        height: 100%; // 3
+    }
+}

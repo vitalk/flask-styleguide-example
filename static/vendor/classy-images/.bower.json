@@ -1,0 +1,24 @@
+{
+  "name": "classy-images",
+  "version": "0.1.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "A base styling for images",
+  "main": "base.images.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/vitalk/classy-images",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "8cd134600479c4d55bc1438323079c7be4a09498"
+  },
+  "_source": "git://github.com/vitalk/classy-images.git",
+  "_target": "~0.1.0",
+  "_originalSource": "classy-images"
+}

@@ -1,0 +1,76 @@
+// A standard, but classy, button used widely for submit forms and
+// to complete other app actions.
+//
+// :hover - Hover state.
+// :active - When the button is pressed.
+// :focus - When the button is focused.
+// :disabled - Disabled state.
+// .is-disabled - Same as above.
+//
+// Styleguide 2.1.
+
+@classy-button-namespace: ~"@{classy-namespace}button";
+@classy-button-padding: .6em;
+@classy-button-padding-mini: (@classy-button-padding / 2);
+
+// 1. Set minimum button size to easy interact
+// 2. Align text to center
+// 3. Inherit font styles
+// 4. Don't wrap text in buttons
+// 5. Force enable appearance as for clickable elements
+// 6. Don't allow buttons to have underlines
+// 7. Normalize styles
+// 8. Disable cursor interaction, pointer events and mute disabled buttons.
+.@{classy-button-namespace} {
+    display: inline-block; // 1
+    font: inherit; // 3
+    line-height: @classy-line-height; // 7
+    min-width: 1em; // 1
+    padding: @classy-button-padding (2 * @classy-button-padding); // 1
+    text-align: center; // 2
+    white-space: nowrap; // 4
+    cursor: pointer; // 5
+    vertical-align: middle; // 7
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+        text-decoration: none; // 6
+    }
+
+    &[disabled],
+    &.is-disabled { // 8
+        cursor: not-allowed !important;
+        opacity: .8;
+        pointer-events: none;
+    }
+}
+
+// Proportionally increase or decrease button size.
+//
+// .button--mini - A mini button.
+// .button--xl - An extra large button.
+//
+// Styleguide 2.2.
+.@{classy-button-namespace} {
+    // 1. No vertical padding
+    // 2. Enough size to easy to touch
+    &--mini {
+        padding: @classy-button-padding-mini (2 * @classy-button-padding-mini); // 1
+        min-width: 3em; // 2
+    }
+
+    // 1. Proportionally increase size
+    &--xl { font-size: 1.3em; } // 1
+}
+
+// Full-width button.
+//
+// .button--block - Button which takes up the entire width of its container.
+//
+// Styleguide 2.3.
+.@{classy-button-namespace}--block {
+    display: block;
+    width: 100%;
+}

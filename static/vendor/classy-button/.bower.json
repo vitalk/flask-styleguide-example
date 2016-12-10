@@ -1,0 +1,29 @@
+{
+  "name": "classy-button",
+  "version": "0.4.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "A standard, but classy, button",
+  "main": "objects.button.less",
+  "keywords": [
+    "css",
+    "oocss",
+    "button"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "classy-defaults": "~0.2.2"
+  },
+  "homepage": "https://github.com/vitalk/classy-button",
+  "_release": "0.4.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.4.0",
+    "commit": "a0ea3b20a9e5ceeccfe9e3f5e356c41a082cf56e"
+  },
+  "_source": "git://github.com/vitalk/classy-button.git",
+  "_target": "~0.4.0",
+  "_originalSource": "classy-button",
+  "_direct": true
+}

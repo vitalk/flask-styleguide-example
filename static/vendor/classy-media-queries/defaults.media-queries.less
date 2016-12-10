@@ -1,0 +1,27 @@
+// Classy media queries and breakpoins for responsive layouts.
+
+
+// Breakpoins.
+@classy-palm-to:      30em;      // 480px
+@classy-tablet-from:  30.0625em; // 481px
+@classy-tablet-to:    48em;      // 768px
+@classy-laptop-from:  48.0625em; // 769px
+@classy-laptop-to:    67.5em;    // 1080px
+@classy-desktop-from: 67.5625em; // 1081px
+
+
+// Media queries.
+@classy-portrait: ~"(orientation: portrait)";
+@classy-landscape: ~"(orientation: landscape)";
+@classy-retina: ~"(-webkit-min-device-pixel-ratio: 1.5)",
+                ~"(min--moz-device-pixel-ratio: 1.5)",
+                ~"(-o-min-device-pixel-ratio: 3/2)",
+                ~"(min-device-pixel-ratio: 1.5)",
+                ~"(min-resolution: 1.5dppx)";
+@classy-mobile: e(%("(max-width: %d)", @classy-palm-to));
+@classy-tablet: e(%("(min-width: %d) and (max-width: %d)", @classy-tablet-from, @classy-tablet-to));
+@classy-tablet-and-up: e(%("(min-width: %d)", @classy-tablet-from));
+@classy-portable: e(%("(max-width: %d)", @classy-tablet-to));
+@classy-laptop: e(%("(min-width: %d) and (max-width: %d)", @classy-laptop-from, @classy-laptop-to));
+@classy-laptop-and-up: e(%("(min-width: %d)", @classy-laptop-from));
+@classy-desktop: e(%("(min-width: %d)", @classy-desktop-from));

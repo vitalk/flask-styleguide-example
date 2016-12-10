@@ -1,0 +1,24 @@
+{
+  "name": "classy-media-queries",
+  "version": "0.1.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "A few variables to simplify usage of media queries",
+  "main": "defaults.media-queries.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/vitalk/classy-media-queries",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "4917b4f8e9367acfb1734e4280134c56407f8a7a"
+  },
+  "_source": "git://github.com/vitalk/classy-media-queries.git",
+  "_target": "~0.1.0",
+  "_originalSource": "classy-media-queries"
+}

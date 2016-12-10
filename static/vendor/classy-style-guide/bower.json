@@ -1,0 +1,19 @@
+{
+  "name": "classy-style-guide",
+  "version": "0.2.1",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "Classy Styleguide layout",
+  "main": "components.style-guide.less",
+  "keywords": [
+    "css",
+    "oocss",
+    "styleguide"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "classy-code": "~0.1.0",
+    "classy-defaults": "~0.2.2"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "classy-style-guide",
+  "version": "0.2.1",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "Classy Styleguide layout",
+  "main": "components.style-guide.less",
+  "keywords": [
+    "css",
+    "oocss",
+    "styleguide"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "classy-code": "~0.1.0",
+    "classy-defaults": "~0.2.2"
+  },
+  "homepage": "https://github.com/vitalk/classy-style-guide",
+  "_release": "0.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.1",
+    "commit": "e2ccd1d496cb7392e63a8b787716dde68e659bab"
+  },
+  "_source": "https://github.com/vitalk/classy-style-guide.git",
+  "_target": "~0.2.1",
+  "_originalSource": "classy-style-guide"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "classy-typography",
+  "version": "0.2.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "Classy typography",
+  "main": "elements.typography.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "classy-defaults": "~0.2.2"
+  },
+  "homepage": "https://github.com/vitalk/classy-typography",
+  "_release": "0.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.0",
+    "commit": "3ebf354fdcb63a3ab3bd74684bbc9cef07a2ba57"
+  },
+  "_source": "https://github.com/vitalk/classy-typography.git",
+  "_target": "~0.2.0",
+  "_originalSource": "classy-typography"
+}

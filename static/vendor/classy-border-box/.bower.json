@@ -1,0 +1,24 @@
+{
+  "name": "classy-border-box",
+  "version": "0.1.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "Apply a natural box layout model globally",
+  "main": "generic.border-box.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/vitalk/classy-border-box",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "53970350e8b2846bef2cc164c050c68d6fa0a1ff"
+  },
+  "_source": "git://github.com/vitalk/classy-border-box.git",
+  "_target": "~0.1.0",
+  "_originalSource": "classy-border-box"
+}

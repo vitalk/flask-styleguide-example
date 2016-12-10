@@ -1,0 +1,69 @@
+// Classy button.
+
+.button {
+    // Remove outline and border from button. The box-shadow is used to create
+    // attractive pseudo-border and background;
+    outline: none;
+    border: none;
+
+    // Round corners.
+    border-radius: .2em;
+
+    // Use antialiasing font smoothing method to counter bold effect on OSX.
+    font-weight: bold;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+    // Prevent button text selection.
+    user-select: none;
+
+    color: #333;
+    background-color: #fafafa;
+    background-image: linear-gradient(rgba(255,255,255,.15), rgba(0,0,0,.1));
+    box-shadow: 0 -1px 0 0 rgba(0,0,0,.05) inset,
+                0 0 0 1px  rgba(0,0,0,.13) inset,
+                0 1px 3px  rgba(0,0,0,.05);
+    text-shadow: 0px 1px 0px rgba(255,255,255,.9);
+
+    // Apply consistent transitions for more smooth animations.
+    transition: opacity .1s ease,
+                background-color .1s ease,
+                box-shadow .1s ease,
+                color .1s ease;
+
+
+    &:hover {
+        color: rgba(0,0,0,.8);
+        background-color: #e0e0e0;
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.08));
+        box-shadow: 0 -1px 0 0 rgba(0,0,0,.05) inset,
+                    0 0 0 1px  rgba(0,0,0,.13) inset,
+                    0 1px 3px  rgba(0,0,0,.15) inset;
+        text-shadow: 0px 1px 0px rgba(255,255,255,.7);
+    }
+
+
+    &:active {
+        color: rgba(0,0,0,.9);
+        background-color: #babbbc;
+        box-shadow: 0 -1px 0 0 rgba(0,0,0,.05) inset,
+                    0 0 0 1px  rgba(0,0,0,.13) inset,
+                    0 3px 5px  rgba(0,0,0,.15) inset;
+        text-shadow: 0px 1px 0px rgba(255,255,255,.5);
+    }
+
+
+    &:focus {
+        color: rgba(0,0,0,.9);
+        box-shadow: 0 -1px 0 0 rgba(0,0,0,.05) inset,
+                    0 0 0 1px  rgba(81,167,232,1) inset,
+                    0 1px 3px  rgba(81,167,232,.5);
+        text-shadow: 0px 1px 0px rgba(255,255,255,.7);
+    }
+
+
+    &:disabled,
+    &.is-disabled {
+        color: #333;
+    }
+}

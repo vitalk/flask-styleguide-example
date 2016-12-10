@@ -1,0 +1,24 @@
+// Contains essential project-specific variables. Feel free to pick up
+// your custom values.
+
+// Classy namespace.
+@classy-namespace: ~"";
+
+// Set the base font size to user's value (16px by default in all major
+// browsers).
+@classy-base-font-size: 16px;
+
+// Set the line height for better bodycopy readability.
+@classy-line-height:  1.4em;
+
+// Use unitless value of `classy-line-height` as `classy-line-height-ratio`
+// because we set it in ems.
+@classy-line-height-ratio: unit(@classy-line-height);
+
+// Uses as the base unit to aligning elements.
+@classy-unit: @classy-line-height;
+
+// Fonts in use.
+@classy-serif-font-family:      Georgia, "Times New Roman", Times, serif;
+@classy-sans-serif-font-family: Arial, Tahoma, sans-serif;
+@classy-monospace-font-family:  Menlo, Monaco, "Courier New", monospace;

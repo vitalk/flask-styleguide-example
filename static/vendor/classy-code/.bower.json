@@ -1,0 +1,27 @@
+{
+  "name": "classy-code",
+  "version": "0.1.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "A basic styling for code snippets and formatted text",
+  "main": "base.code.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "classy-snippets": "~0.1.0"
+  },
+  "homepage": "https://github.com/vitalk/classy-code",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "794f7fac3c41f50cf58c9d7fc0981b4cc920245d"
+  },
+  "_source": "git://github.com/vitalk/classy-code.git",
+  "_target": "~0.1.0",
+  "_originalSource": "classy-code"
+}

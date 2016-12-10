@@ -1,0 +1,13 @@
+// Page-level styling.
+
+// 1. Initial typography properties.
+// 2. Ensure the page always fills the entire height of the viewport.
+// 3. Force vertical scroll bar, to prevent "centering jumps" when navigating
+//    back and forth between pages with enough content to have a vertical
+//    scroll bar and pages that do not.
+html {
+    font: e(%('100%/%d sans-serif', @classy-line-height-ratio)); // 1
+    line-height: @classy-line-height; // 1
+    min-height: 100%; // 2
+    overflow-y: scroll; // 3
+}

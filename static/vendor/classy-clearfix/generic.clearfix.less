@@ -1,0 +1,15 @@
+// Micro clearfix hack, as per: http://nicolasgallagher.com/micro-clearfix-hack/
+//
+// 1. Trigger IE6/7 `hasLayout`
+// 2. Avoids an Opera bug that creates space around clearfixed elements
+//    if the contenteditable attribute is also present somewhere in the
+//    document.
+.clearfix() {
+    &:before,
+    &:after {
+        content: ' '; // 2
+        display: table;
+    }
+    &:after { clear: both; }
+    zoom: 1; // 1
+}

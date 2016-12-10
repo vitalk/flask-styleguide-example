@@ -1,0 +1,28 @@
+{
+  "name": "classy-sticky-footer",
+  "version": "0.1.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "A classy, but sticky footer",
+  "main": "objects.sticky-footer.less",
+  "keywords": [
+    "css",
+    "oocss",
+    "sticky"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "classy-defaults": "~0.2.2"
+  },
+  "homepage": "https://github.com/vitalk/classy-sticky-footer",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "0db254d60ab52355c8383e3c5b40f7a32de85c51"
+  },
+  "_source": "git://github.com/vitalk/classy-sticky-footer.git",
+  "_target": "~0.1.0",
+  "_originalSource": "classy-sticky-footer"
+}

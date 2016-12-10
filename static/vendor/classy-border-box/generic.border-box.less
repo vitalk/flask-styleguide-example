@@ -1,0 +1,20 @@
+// Apply a natural box layout model globally, as per
+// http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+
+@classy-border-box: true;
+
+.classy-border-box(@do) when (@do = true) {
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:after,
+    *:before {
+        box-sizing: inherit;
+    }
+}
+.classy-border-box(@do) when (default()) {}
+
+
+.classy-border-box(@classy-border-box);

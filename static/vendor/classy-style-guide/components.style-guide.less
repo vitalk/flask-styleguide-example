@@ -1,0 +1,86 @@
+// Style Guide.
+
+
+@classy-style-guide-namespace: ~"@{classy-namespace}style-guide";
+
+
+#classy-style-guide-vars {
+    @b:   #fafafa;
+    @bo:  #eee;
+    @bor: .2em;
+    @c:   #444;
+}
+
+
+// 1. Add a more empty space for breeze.
+// 2. Use tiny border to separate subsections (and elements as well) from
+//    each other.
+// 3. Apply border radius to element. Ensure the guide reference and html
+//    example use the same value and don't override parent's element.
+// 4. Use relative position to create a new positioning context and to pull
+//    element modifier to the upper right edge.
+// 5. Add a gap between sections.
+// 6. Add horizontal scroll to example when needed to ensure the long lines
+//    don't break the page layout.
+.@{classy-style-guide-namespace} {
+    #classy-style-guide-vars;
+
+
+    border: 1px solid @bo; // 2
+    border-radius: @bor; // 3
+
+    margin-bottom: @classy-unit; // 5
+    &:last-child { margin-bottom: 0; } // 5
+
+
+    &__reference {
+        padding: @classy-unit/2 @classy-unit; // 1
+        margin: 0;
+
+        background: @c;
+        color: @b;
+
+        border-top-left-radius: @bor; // 3
+        border-top-right-radius: @bor; // 3
+    }
+
+
+    &__description {
+        padding: @classy-unit; // 1
+
+        background: @b;
+        border-bottom: 1px solid @bo; // 2
+    }
+
+
+    &__element {
+        padding: @classy-unit; // 1
+        position: relative; // 4
+
+
+        &+& { border-top: 1px solid @bo; } // 2
+    }
+
+
+        &__modifier {
+            position: absolute; // 4
+            top: -1px; // 4
+            right: -1px; // 4
+            padding: @classy-unit/4 @classy-unit/2;
+
+            background: @b;
+            border: 1px solid @bo;
+            color: @c;
+        }
+
+
+    &__html {
+        padding: @classy-unit; // 1
+
+        background: @b;
+        border-top: 1px solid @bo; // 2
+        border-bottom-left-radius: @bor; // 3
+        border-bottom-right-radius: @bor; // 3
+        overflow-y: auto; // 6
+    }
+}

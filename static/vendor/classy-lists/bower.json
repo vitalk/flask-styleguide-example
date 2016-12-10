@@ -1,0 +1,17 @@
+{
+  "name": "classy-lists",
+  "version": "0.2.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "Ordered and unordered lists",
+  "main": "elements.lists.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "classy-defaults": "~0.2.2"
+  }
+}
