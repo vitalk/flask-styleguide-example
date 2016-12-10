@@ -43,7 +43,7 @@ cssmain = Bundle(
     'stylesheets/main.less',
     debug=False,
     depends=('**/*.less'),
-    filters=('less', 'cssmin', copyright),
+    filters=('less', 'autoprefixer', 'cssmin', copyright),
     output='dist/main.%(version)s.css'
 )
 
